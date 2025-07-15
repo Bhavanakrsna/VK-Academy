@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Courses</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="about.css">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Navigation start -->
+	<nav>
+		<div class="logo">
+        	<img src="img/logo.png" alt="VK Academy Logo" />
+      	</div>
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="courses.html" class="active">Courses</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+
+	<!-- Hero section starts from here -->
+	<section id="course-home">
+		<h1>
+			Our Top Courses
+		</h1>
+	</section>
+	<!-- Hero section ends from here -->
+
+		<!-- Courses section starts from here -->
+	<section id="course">
+  <h2>From 9th grade to B.Tech – We’ve got something for everyone!</h2>
+
+  <div class="course-box">
+
+    <!-- 1. 9th & 10th (All Subjects) -->
+    <div class="courses">
+      <img src="img/10th.jpg" alt="9th and 10th All Subjects">
+      <div class="details">
+        <span>Updated July 2025</span>
+        <h6>9th & 10th – All Subjects</h6>
+        <div class="star">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <span>(274)</span>
+        </div>
+        <p>Concept clarity, fun tricks, and smart board prep.</p>
+      </div>
+    </div>
+
+    <!-- 2. 11th & 12th – Science + Commerce -->
+    <div class="courses">
+      <img src="img/pu.jpg" alt="11th and 12th Coaching">
+      <div class="details">
+        <span>Updated July 2025</span>
+        <h6>11th & 12th – PCMC & Commerce</h6>
+        <div class="star">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+          <i class="fa-regular fa-star"></i>
+          <span>(311)</span>
+        </div>
+        <p>Maths, Physics, Chemistry, Accounts — all under one roof.</p>
+      </div>
+    </div>
+
+    <!-- 3. Degree + PG -->
+    <div class="courses">
+      <img src="img/mba.png" alt="UG PG Coaching">
+      <div class="details">
+        <span>Updated July 2025</span>
+        <h6>BSc, BCA, B.Com, MCA, MBA</h6>
+        <div class="star">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+          <span>(245)</span>
+        </div>
+        <p>From basics to advanced — clear concepts and scoring strategies.</p>
+      </div>
+    </div>
+
+    <!-- 4. B.Tech (M1 to M4) -->
+    <div class="courses">
+      <img src="img/btech.jpg" alt="BTech Maths Coaching">
+      <div class="details">
+        <span>Updated July 2025</span>
+        <h6>B.Tech – M1, M2, M3, M4</h6>
+        <div class="star">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <span>(189)</span>
+        </div>
+        <p>Engineering Maths made simple — with formula sheets & crash support.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+	<!-- Courses section ends from here -->
+
+	<!-- Footer section starts from here -->
+	<footer>
+		<div class="footer-col">
+			<h3>Newsletter</h3>
+			<p>You can trust us. we only send promo offers.</p>
+
+			<div class="subscribe">
+				<input type="email" placeholder="Your email Address">
+				<a href="#" class="yellow">SUBSCRIBE</a>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p>
+				Copyright @ 2025 All rights reserved | VK Academy <a href="https://atulcodex.com" target="_blank">atulcodex</a>
+			</p>
+			<div class="pro-links">
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-linkedin-in"></i>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section ends from here -->
+
+	<script>
+		// Show menu links on burger click
+		$('#menu-btn').click(function(){
+			$('nav .navigation ul').addClass('active')
+		});
+
+		// Hide navbar on click function
+		$('#menu-close').click(function(){
+			$('nav .navigation ul').removeClass('active')
+		});
+	</script>
+</body>
+</html>
